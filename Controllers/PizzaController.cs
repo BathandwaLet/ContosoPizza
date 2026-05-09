@@ -37,7 +37,7 @@ public class PizzaController : ControllerBase
     }
     
     // PUT action
-    [HttpPut]
+    [HttpPut("{id}")]
     public IActionResult Update(int id, Pizza pizza)
     {
         if (id != pizza.Id)
@@ -53,4 +53,5 @@ public class PizzaController : ControllerBase
     }
 
     // DELETE action
+    
 }
