@@ -1,3 +1,7 @@
+using ContosoPizza.Models;
+using ContosoPizza.Services;
+using Microsoft.AspNetCore.Mvc;
+
 namespace ContosoPizza.Controllers;
 
 [ApiController]
@@ -14,7 +18,7 @@ public class PizzaController : ControllerBase
 
     // GET by Id action
     [HttpGet("{id}")]
-    public ActionResult<List<Pizza>> Get(int id)
+    public ActionResult<Pizza> Get(int id)
     {
         var pizza = PizzaService.Get(id);
         
