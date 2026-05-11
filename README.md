@@ -40,41 +40,30 @@ get
 
 ## Project Structure
 ### ContosoPizza
-#### ├── Controllers
-##### │   └── PizzaController.cs
-#### ├── Models
-##### │   └── Pizza.cs
-#### ├── Services
-##### │   └── PizzaService.cs
-#### ├── Properties
-##### │   └── launchSettings.json
-#### ├── Program.cs
-#### └── ContosoPizza.csproj 
-ContosoPizza/
-├── Controllers/
-│   └── PizzaController.cs      # API route handlers
-├── Models/
-│   └── Pizza.cs                # Pizza data model
-├── Services/
-│   └── PizzaService.cs         # Business logic layer
-├── Properties/
-│   └── launchSettings.json     # Dev environment config
-├── Program.cs                  # App entry point & middleware
-└── ContosoPizza.csproj         # Project dependencies
+####  ├── Controllers
+##### │     └── PizzaController.cs (API route handlers)
+####  ├── Models
+##### │     └── Pizza.cs (Pizza data model)
+####  ├── Services
+##### │     └── PizzaService.cs (Business logic handler)
+####  ├── Properties
+##### │     └── launchSettings.json (Dev environment and configuration)
+####  ├── Program.cs (App entry point)
+####  └── ContosoPizza.csproj (Project dependency)
 
 ## Example Request & Response
 
-POST /Pizza
-json{
-  "name": "Margherita",
-  "isGlutenFree": false
-}
-Response 201 Created
-json{
-  "id": 1,
-  "name": "Margherita",
-  "isGlutenFree": false
-}
+POST /Pizza </br>
+json{ </br>
+  "name": "Margherita", </br>
+  "isGlutenFree": false </br>
+} </br>
+Response 201 Created </br>
+json{ </br>
+  "id": 1, </br>
+  "name": "Margherita", </br>
+  "isGlutenFree": false </br>
+} </br>
 
 ## License
 This project is for educational purposes as part of a Microsoft Learn ASP.NET Core tutorial.
